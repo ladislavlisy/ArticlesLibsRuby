@@ -9,7 +9,7 @@ class Configure
     [code1, code2]
   end
 
-  def self.configure_contract_term
+  def self.configure_contract_term_articles
     config_category = ProcessCategory::CATEGORY_TERMS
     article_array = [
         Article.new(ConfigArticleCode::ARTICLE_CONTRACT_EMPL_TERM, config_category,
@@ -22,6 +22,6 @@ class Configure
   end
 
   def self.configure_articles()
-    configure_contract_term
+    configure_contract_term_articles
   end
 end
